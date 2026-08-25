@@ -7,7 +7,7 @@ spec:
   interval: 5m0s
   path: ./kustomize
   prune: true
-  sourceref: 
+  sourceRef: 
     kind: GitRepository
     name: podinfo
   targetNamespace: default
