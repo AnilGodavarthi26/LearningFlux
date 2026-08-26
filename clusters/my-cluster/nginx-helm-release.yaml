@@ -1,4 +1,4 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: nginx
@@ -7,10 +7,9 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: ./nginx
+      chart: ./charts/nginx
       sourceRef:
         kind: GitRepository
         name: flux-system
         namespace: flux-system
       interval: 1m
-  releaseName: nginx
