@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: https://github.com/AnilGodavarthi26/LearningFlux.git
+  url: ssh://git@github.com/AnilGodavarthi26/LearningFlux
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
