@@ -10,7 +10,7 @@ spec:
       chart: mysql
       version: 9.10.9
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: mysql
         namespace: default
       interval: 1m
